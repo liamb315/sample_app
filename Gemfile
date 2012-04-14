@@ -9,9 +9,11 @@ group :development do
 end
 
 
+#Spork loads the Rails environment once and then maintains a pool of processes for running future tests.  This is different from RSpec which runs tests by reloading the entire Rails environment each time 
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc8'
 end
 
 group :assets do
