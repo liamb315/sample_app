@@ -4,6 +4,8 @@
 		<title><%= title %></title>
 		<%= csrf_meta_tag %>
 		<!-- Uses the rails method, csrf_meta_tag to prevent cross-site request forgery (CSGRF) type of malicious web attack-->
+		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
 	</head>
 	<body>
 		<%= yield %>
